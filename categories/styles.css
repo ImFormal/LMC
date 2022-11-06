@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #FCB030;
+}
+
+textarea {
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 6px;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+.result {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result-content {
+    background-color: #fff;
+    width: 40%;
+    border: 6px;
+    padding: 20px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25), 
+	10px 10px 70px rgba(0,0,0,0.25);
+	border-radius: 6px;
+}
+.result-content a {
+    color: #FCB030;
+    text-decoration: 0;
+}
+.result-content a:hover {
+    text-decoration: underline;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+.result-content h3 {
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+.liste-produits {
+    max-height: 400px;
+    overflow: auto;
+}
+.produit {
+    margin: 20px 0;
+    height: 100px;
+    display: flex;
+}
+.produit .image-prod {
+    height: 100%;
+    width: 100px;
+}
+.produit .image-prod img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.produit .text {
+    margin-left: 15px;
+    overflow: hidden;
+    width: 80%;
+}
+.produit .text .nom {
+    text-transform: uppercase;
+}
+.produit .text .description {
+    color: rgba(0,0,0,0.6);
+    font-size: 16px;
+}
+.produit .text .stock{
+	color: red;
+	font-size: 14px;
+}
+.produit .text .categorie{
+	color: rgba(0,0,0,0.6);
+	font-size: 10px;
+}
+.produit .text span{
+	color: rgba(0,0,0,0.6);
+	font-size: 10px;
+	float:right;
+}
+.icon{
+	text-align:right;
+	font-size:30px;
+}
