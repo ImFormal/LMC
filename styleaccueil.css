@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	background: url('https://static.vecteezy.com/system/resources/previews/001/941/784/original/abstract-technology-futuristic-concept-glowing-particles-dots-elements-on-dark-blue-background-vector.jpg');
+	background-size: cover;
+}
+
+.bandeau {
+	background-color: #162538;
+}
+
+.container{
+	text-align: center;
+}
+
+h1{
+	font-size: 90px;
+	margin: 200px;
+	margin-bottom: 100px;
+	font-family: "DejaVu Sans Mono";
+}
+
+.bouton-boutique{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 24px;
+	text-decoration: none;
+	background: #F1A92f;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+	inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+.bouton-boutique:hover, .connexion:hover{
+	filter: brightness(1.1);
+}
+
+.overlay{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0,0,0,0.7);
+	transition: opacity .3s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target{
+	visibility:visible;
+	opacity:1;
+}
+
+.popup{
+	margin:18rem auto;
+	padding: 1rem;
+	background:#010318;
+	border-radius:5px;
+	width:20%;
+	position:relative;
+	transition: all 0.3s ease-in-out;
+	border: 3px solid orange
+}
+
+.popup .cross{
+	position:absolute;
+	top:1rem;
+	right:1.5rem;
+	font-size:2rem;
+	font-weight: bold;
+	text-decoration:none;
+	transition: 0.3 ease;
+	color: white;
+}
+
+.popup .cross:hover{
+	color:orange;
+}
+
+.popup li{
+	list-style:none;
+	margin:50px;
+	text-align: center;
+	font-size:200%;
+}
+.con{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	background: #F1A92f;
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+	inset -3px -3px 5px rgba(0,0,0,0.5);
+}
