@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: #FCB030;
+}
+
+.produit {
+    display: flex;
+    margin: 20px auto;
+    width: 50%;
+    height: 160px;
+    background: #EEE;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+}
+
+.produit .image {
+    background-color: #DDD;
+    border-radius: 20px;
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.produit .image img {
+    margin: 10px;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 250ms;
+}    
+
+.produit .image:hover img {
+    margin: 0;
+    height: 160px;
+    width: 160px;
+    transition: 250ms;
+    filter: brightness(120%);
+}
+
+.produit .text {
+    position: relative;
+    margin: 10px;
+    width: 100%;
+}
+
+.produit .text .titre {
+    margin-bottom: 10px;
+}
+
+.produit .text .titre .nom {
+    font-size: x-large;
+}
+
+.produit .text .titre .categorie {
+    position: relative;
+	font-size: large;
+    color: #999;
+    font-variant: small-caps;
+    top: -0.1em;
+}
+
+.produit .text .supprimer {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    background: #c40000;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: #EEE;
+    cursor: pointer;
+    transition: 100ms;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+}
+
+.produit .text .supprimer:hover {
+    background: #e63232;
+    transition: 100ms;
+}
+
+.modif {
+    display: inline-flex;
+    font-size: large;
+    width: 80px;
+    text-align: center;
+    user-select: none;
+}
+
+.status {
+    display: block;
+    font-size: large;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.modif .nombre {
+    flex: 7;
+    padding: 3px;
+    background: #DDD;
+    color: #999;
+}
+
+.modif .modifmoins, .modif .modifplus {
+    flex: 3;
+    padding: 3px;
+    background: #E08309;
+    color: #EEE;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.modif .modifmoins:hover, .modif .modifplus:hover {
+    flex: 3;
+    padding: 3px;
+    background: #FCB030;
+    color: #EEE;
+    transition: 100ms;
+}
+
+.modif .modifmoins {
+    border-radius: 5px 0 0 5px;
+}
+
+.modif .modifplus {
+    border-radius: 0px 5px 5px 0;
+}
+
+.text strong {
+    color: #E08309;
+}
+
+#paniervide {
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #EEE;
+    margin: 0 auto;
+}
+
+#commander {
+    margin: 20px auto;
+    width: 300px;
+    color: #EEE;
+    background-color: #E08309;
+    border-radius: 20px;
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+#commander:hover {
+    filter: brightness(110%);
+}
