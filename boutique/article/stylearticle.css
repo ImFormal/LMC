@@ -1,0 +1,319 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: #FCB030;
+}
+
+#contenu {
+    display: flex;
+    min-width: 500px;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 700px; 
+    background: #EEE;
+    border-radius: 30px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+    padding: 30px;
+}
+
+#gauche {
+    flex: 1;
+    background: #DDD;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+}
+
+.action {
+    margin: 10px;
+}
+
+.action {
+    font-size: 1em;
+    color: #E08309;
+}
+
+.action a {
+    color: #E08309;
+}
+
+.action a img {
+    position: relative;
+    top: 0.2em;
+    height: 1em;
+    margin-right: 10px;
+}
+
+.action:hover, .action a:hover {
+    filter: brightness(110%);
+}
+
+#gauche hr {
+    margin: 10px;
+}
+
+.image {
+    position: relative;
+    
+}
+
+.image:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+  
+.image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+#droite {
+    flex: 3;
+    padding-left: 20px;
+}
+
+#droite h1 {
+    background: #DDD;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+}
+
+#droite h2 {
+    margin: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+#droite h3 {
+    margin: 10px;
+    margin-top: 20px;
+    color: #666;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#droite p {
+    color: #333;
+    margin: 20px;
+}
+
+.etoiles {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.etoile {
+    position: relative;
+    top: 0.1em;
+    height: 1em;
+    user-select: none;
+}
+
+.avis {
+    display: block;
+    margin: 10px 20px 0 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+}
+
+.avis .enteteavis {
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%;
+    background: #CCC;
+    border-radius: 10px 10px 0 0;
+}
+
+.avis .corpsavis {
+    padding: 10px;
+    width: 100%;
+    background: #DDD;
+    border-radius: 0 0 10px 10px;
+    color: #333;
+}
+
+.avis .pseudoavis {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.avis .dateavis {
+    padding-left: 5px;
+    font-size: small;
+    color: #777;
+}
+
+.avis .supprimeravis {
+    position: relative;
+    float: right;
+    font-size: x-small;
+    color: #c40000;
+    transition: 250ms;
+}
+
+.avis .supprimeravis:hover {
+    color: #e63232;
+    transition: 250ms;
+}
+
+#droite #avisutilisateur {
+    display: block;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+#droite #avisutilisateur textarea {
+    width: 100%;
+    padding: 5px;
+    border: solid 2px #AAA;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+    min-height: 2em;
+    max-height: 10em;
+    height: 4em;
+    outline: none;
+    transition: 100ms;
+    overflow-y: hidden;
+}
+
+#droite #avisutilisateur textarea:focus {
+    border: solid 2px #E08309;
+    transition: 100ms;
+}
+
+#droite #avisutilisateur button {
+    padding: 5px;
+    background-color: #E08309;
+    border: none;
+    color: #EEE;
+    border-radius: 5px;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+#droite #avisutilisateur button:hover {
+    background-color: #FCB030;
+    transition: 100ms;
+}
+
+#droite #avisutilisateur #note {
+    background-color: #CCC;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#droite #avisutilisateur label {
+    color: #333;
+}
+
+input[type='submit'] {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 15px;
+	background: #E08309;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	height: 50px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+input[type='submit']:hover {
+	background-color: #FCB030;
+    transition: 100ms;
+}
+
+#panier {
+    display: flex;
+    background: #DDD;
+    height: 34px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25);
+    margin: 20px 20px 0 20px;
+}
+
+#panier #iconepanier {
+    height: 100%;
+    background: #CFCFCF;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#panier #text {
+    margin: auto 0;
+    font-size: large;
+    color: #999;
+}
+
+.modif {
+    display: inline-flex;
+    font-size: large;
+    width: 80px;
+    text-align: center;
+    user-select: none;
+}
+
+.modif .nombre {
+    flex: 7;
+    padding: 3px;
+    background: #CCC;
+    color: #888;
+}
+
+.modif .modifmoins, .modif .modifplus {
+    flex: 3;
+    padding: 3px;
+    background: #E08309;
+    color: #EEE;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.modif .modifmoins:hover, .modif .modifplus:hover {
+    flex: 3;
+    padding: 3px;
+    background: #FCB030;
+    color: #EEE;
+    transition: 100ms;
+}
+
+.modif .modifmoins {
+    border-radius: 5px 0 0 5px;
+}
+
+.modif .modifplus {
+    border-radius: 0px 5px 5px 0;
+}
+
+#panier .paniererreur {
+    color: #c40000;
+}
+
+strong {
+    color: #E08309;
+}
